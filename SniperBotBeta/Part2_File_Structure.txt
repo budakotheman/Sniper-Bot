@@ -1,0 +1,24 @@
+Part 2: File Structure and Interactions
+
+Required Files for the Project
+------------------------------
+1. main.py: The entry point of the bot, orchestrates event scanning and trading execution.
+2. config.json: Stores user-specific configurations, including keys, addresses, and trade parameters.
+3. scanner.py: Handles blockchain event scanning and filtering.
+4. trader.py: Executes trades based on the events detected by scanner.py.
+5. logger.py: Logs all activities, including successful trades, errors, and performance metrics.
+
+Interaction Between Files
+-------------------------
+- main.py calls scanner.py to monitor blockchain events.
+- Relevant events are passed to trader.py for analysis and trade execution.
+- trader.py retrieves parameters from config.json and logs results to logger.py.
+- logger.py writes logs to a file for user review and debugging.
+
+Basic Functionality of Each File
+--------------------------------
+- main.py: Coordinates all modules, initializes configurations, and manages the bot's lifecycle.
+- config.json: Allows users to define trading parameters such as gas, slippage, and funds.
+- scanner.py: Connects with blockchain APIs or WebSocket endpoints to track events in real-time.
+- trader.py: Calculates trade details and sends transactions to the blockchain.
+- logger.py: Ensures that all actions are documented for transparency and troubleshooting.

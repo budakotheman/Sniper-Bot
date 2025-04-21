@@ -1,0 +1,36 @@
+# Part 6: Usage and Maintenance
+
+## Running the Bot
+1. Ensure all dependencies are installed:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Run the bot:
+   ```bash
+   python main.py
+   ```
+
+## Editing Parameters
+- Open `config.json` to adjust the following:
+  - **Gas Fees**: Modify the `gasFee` value.
+  - **Slippage**: Change the `slippageTolerance` value.
+  - **Fund Allocation**: Update the `tradeAllocation` value to control the percentage of funds used for each trade.
+
+## Updating the Bot
+1. Pull the latest code from the repository:
+   ```bash
+   git pull origin main
+   ```
+2. Review the changelog for updates:
+   - Check for new features or bug fixes.
+3. Test the bot in a development environment before deploying.
+
+## Troubleshooting
+- **Logs**: Review `logger.py` output for issues.
+- **Errors**: Debug specific errors using stack traces.
+- **Support**: Refer to documentation or seek community help if needed.
+
+## Best Practices
+- Test the bot in a simulated environment before using it in real markets.
+- Regularly update your dependencies for security patches.
+- Back up your `config.json` file securely.

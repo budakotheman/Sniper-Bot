@@ -1,0 +1,40 @@
+Part 4: Configuration and Setup
+
+Instructions for Configuration
+------------------------------
+1. Configuring Addresses and Keys:
+   - Open the config.json file.
+   - Add your blockchain wallet address under the walletAddress field.
+   - Add your private key in the privateKey field. Make sure to keep this file secure.
+
+2. Setting API Keys:
+   - If the bot requires interaction with blockchain APIs (e.g., Infura, Alchemy), obtain your API key from the respective service provider.
+   - Add the API key to the apiKey field in config.json.
+
+3. Network Configuration:
+   - Specify the blockchain network (e.g., Ethereum Mainnet, Binance Smart Chain) under the network field in config.json.
+   - Define the RPC URL for the network.
+
+Finding Addresses and Keys
+--------------------------
+- Wallet Address: Use a wallet like MetaMask to find your public address.
+- Private Key: Export it from your wallet application. Be cautious and avoid sharing this key.
+- API Keys: Visit the official websites of services like Infura or Alchemy and follow their instructions to generate an API key.
+
+Example of config.json
+----------------------
+{
+  "walletAddress": "0xYourWalletAddress",
+  "privateKey": "YourPrivateKey",
+  "apiKey": "YourAPIKey",
+  "network": "Ethereum Mainnet",
+  "gasFee": "50",
+  "slippageTolerance": "1",
+  "tradeAllocation": "0.1"
+}
+
+Security Tips
+-------------
+- Never share your private key publicly.
+- Use encrypted storage for the config.json file.
+- Regularly rotate API keys to maintain security.

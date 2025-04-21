@@ -1,0 +1,24 @@
+Part 3: Features and Functionalities
+
+Detailed Features
+-----------------
+1. Blockchain Event Scanning:
+   - Detects token launches, liquidity pool updates, and other events.
+   - Configurable parameters allow users to filter events by type or criteria.
+
+2. Automated Trading:
+   - Sends transactions with optimized gas and slippage.
+   - Configures allocation of funds for each trade.
+
+3. Customizable Parameters:
+   - Users can define gas fees, slippage tolerance, and trading thresholds in config.json.
+
+4. Error Handling and Logging:
+   - Logs all errors, successful trades, and performance metrics to a file.
+   - Provides real-time feedback for debugging.
+
+Instructions on Parameter Configuration
+---------------------------------------
+- Gas Fees: The bot uses the gasFee parameter from config.json to estimate transaction costs.
+- Slippage: The slippageTolerance parameter defines the acceptable price variation for trades.
+- Fund Allocation: Users can specify how much of their wallet is allocated for each trade using the tradeAllocation parameter.
